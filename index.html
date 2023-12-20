@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+  </head>
+  <body>
+    <h1>Exercícios de avaliação - Nivello</h1>
+    <h2>Avaliação técnica de candidatos a vaga de estágio para Front-end</h2>
+    <h4>
+      <ul>
+        <li>
+          Para editar o código voce deve fazer o login/cadastro no SandBox.
+          Acessando essa página, é no canto superior direito.
+        </li>
+        <li>
+          As respostas devem ser feitas direto no código, nas área descritas em
+          comentário
+        </li>
+        <li>
+          Após finalizar, faça o download do projeto no menu superior esquerdo.
+          O arquivo baixado dever ser enviado no mesmo e-mail que você recebeu.
+          Se tiver dificuldade, copie o código da index.html, salve em um .txt e
+          envie no e-mail.
+        </li>
+        <li style="color: red">Não usar Chat GPT ... nós saberemos 😐</li>
+      </ul>
+    </h4>
+    <hr />
+    <h3>
+      1 - Explique, em suas palavras, a diferença entre um algoritmo e um
+      programa de computador.
+    </h3>
+    Resposta: A diferença é que um algoritmo pode ser escrito de forma abstrata,
+    já um programa de computador possui regras sintáticas para serem escritos.
+
+    <hr />
+    <h3>2 - Explique, como funciona um loop cite 2 exemplos diferentes.</h3>
+    Resposta: Funciona como uma instrução para o programa repetir tarefas até a
+    sua realização. Exemplos: For e While.
+    <hr />
+    <h3>3 - Qual a diferença de um vetor e de uma matriz.</h3>
+    Resposta: Suas dimensões. Enquanto o Vetor é de uma única dimensão a Matriz
+    pode conter várias dimensões.
+    <hr />
+    <h3>
+      4 - Crie uma constante (em Javascript) que represente a matriz abaixo:
+    </h3>
+    | 1,2,3 |<br />
+    | 4,5,6 |<br />
+    | 7,8,9 |<br />
+    <br />
+    <div id="resposta4"></div>
+    <script>
+      var resposta4 = document.getElementById("resposta4");
+      // Correção da representação da matriz conforme pedido no exercício 4
+      const Matriz = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9],
+      ];
+
+      resposta4.innerHTML = Matriz.toString();
+    </script>
+    <hr />
+    <h3>5 - CSS: Centralize o quadrado azul dentro do quadrado cinza:</h3>
+    <h4>Utilize as próprias tags 'styles' para inserir mais CSS.</h4>
+    <div
+      style="
+        width: 200px;
+        height: 200px;
+        background-color: gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <div style="width: 50px; height: 50px; background-color: blue"></div>
+    </div>
+    <hr />
+    <h3>6 - Explique a diferença entre let, const e var.</h3>
+    Resposta: O var pode ser declarado sem ser inicializado e está disponível
+    fora do seu escopo. O let pode ser declarado sem ser inicializado e não está
+    disponível fora do seu escopo. O const não pode ser declarado sem ser
+    inicializado e não está disponível fora do seu escopo.
+    <hr />
+    <h3>
+      7 - Na string abaixo, faça um processo que remova todos os espaços,
+      substitua as letras 'a' por números '4' e deixe todas as letras
+      maiusculas:
+    </h3>
+    <div>
+      <i>
+        A Nivello surgiu em 2012, na época ainda com outro nome começou a
+        desenvolver o que é hoje a melhor plataforma para gestão de marketing de
+        rede do mercado. A mudança do nome, se deu ao que representa a palavra
+        Nivello, que é uma fusão do italiano “Livello”, que quer dizer nível,
+        com o nosso português. Desde então, nunca paramos de otimizar e evoluir
+        nossa ferramenta, para oferecer o que há de melhor em tecnologia,
+        inovação, segurança e performance para nossos clientes, que são quem nos
+        impulsionam a sempre melhorar, e nos dão a oportunidade de levar esta
+        poderoza solução de vendas que é o Marketing Multinível.</i
+      >
+    </div>
+    <br />
+    <div id="resposta7"></div>
+    <script>
+      var texto = `A Nivello surgiu em 2012, na época ainda com outro nome começou a
+  desenvolver o que é hoje a melhor plataforma para gestão de marketing de
+  rede do mercado. A mudança do nome, se deu ao que representa a palavra
+  Nivello, que é uma fusão do italiano “Livello”, que quer dizer nível,
+  com o nosso português. Desde então, nunca paramos de otimizar e evoluir
+  nossa ferramenta, para oferecer o que há de melhor em tecnologia,
+  inovação, segurança e performance para nossos clientes, que são quem nos
+  impulsionam a sempre melhorar, e nos dão a oportunidade de levar esta
+  poderoza solução de vendas que é o Marketing Multinível.`;
+
+      // Remover espaços, substituir 'a' por '4' e converter para maiúsculas
+      var resposta7 = texto.replace(/\s/g, "").replace(/a/g, "4").toUpperCase();
+
+      document.getElementById("resposta7").innerText = resposta7;
+    </script>
+    <hr />
+    <h3>8 - Realize uma redução no vetor abaixo</h3>
+    <h4>
+      Crie uma nova variável que receba a soma de todos os valores à partir de
+      uma função reduce.
+    </h4>
+    <p>const vetor1 = [1, 2, 3, 2, 6, 7, 1, 9, 4, 5];</p>
+    <script>
+      // Exercíciosescreva a resposta do exercício 5 aqui
+    </script>
+    <hr />
+    <h3>
+      9 - Utilize o botão abaixo, que ao clicar chama uma função que abre um
+      alert, com a url de acesso desta página.
+    </h3>
+    <div class="buttonArea">
+      <button onclick="redirecionar()">Clique aqui</button>
+    </div>
+    <script>
+      // Função que exibe a URL da página em um alert
+      function redirecionar() {
+        alert(
+          "https://codesandbox.io/p/sandbox/teste-nivello-estagio-front-end-3r965r" +
+            window.location.href
+        );
+      }
+    </script>
+    <hr />
+    <h3>
+      10 - Explique com suas palavras, qual a diferença entre http, https e ssh.
+    </h3>
+    Resposta: Http é um protocolo que permite a transmissão de dados através de
+    www - world wide web. Https é uma versão mais segura de Http, o Https
+    criptografa as conexões. Ssh, é um protocolo específico de segurança de
+    troca de arquivos entre cliente e servidor de internet.
+    <hr />
+    <h3>11 - Explique, com suas palavras a diferença entre GET, PUT e POST.</h3>
+    Resposta: GET é para pegar informações, o PUT para atualizar ou criar algo
+    de forma mais calma, e o POST para enviar dados quando você quer que o
+    servidor faça alguma coisa com eles.
+    <hr />
+    <h3>
+      12 - Explique, a diferença entre uma linguagem fortemente tipada e
+      dinamicamente tipada.
+    </h3>
+    Resposta: A diferença é que na Linguagem Fortemente Tipada os tipos de dados
+    são rigidamente verificados durante a compilação e na Linguagem
+    Dinamicamente Tipada, a verificação de tipos ocorre em tempo de execução.
+    <hr />
+    <h3>
+      13 - Era uma vez nosso colega Serginho. Certo dia, Serginho queria muito
+      colocar no ar um site que ele fez para divulgar seus serviços de marido de
+      aluguel. Infelizmente, Serginho não entendia nada de internet. Então pediu
+      ajuda para você ajuda-lo. Explique para o Serginho como ele pode subir seu
+      site de forma rápida e simples na internet.
+    </h3>
+    Resposta: Serginho, você seguirá os seguintes passos: 1 - Escolher um
+    serviço de hospedagem; 2 - Precisará registrar um nome de domínio através do
+    mesmo serviço de hospedagem; 3 - Depois de escolher o serviço de hospedagem
+    e registrar o nome de domínio, precisará preparar o site. Ele deve ter todos
+    os arquivos do site prontos, incluindo html, css, e outros recursos
+    necessários. 4 - Transferir seus arquivos para o servidor de hospedagem; 5 -
+    Precisará configurar os servidores de nomes para apontarem para o serviço de
+    hospedagem. Isso geralmente é feito no painel de controle do registrador de
+    domínios. .6 - Após configurar o nome de domínio, você deverá aguardar a
+    propagação, pode levar até 48 horas; 7 - E por fim, você deverá fazer um
+    teste, acessando o site e verificando se ele está funcionando corretamente,
+    você pode fazer isso, digitando o nome de domínio no navegador. Caso tenha
+    alguma duvida é só chamar Serginho.
+    <hr />
+    <p style="color: red">Sério ... não use Chat GPT .. 😐</p>
+    <p>Bom teste!!!</p>
+    <p>Obrigada! ❤️</p>
+  </body>
+</html>
